@@ -13,10 +13,10 @@
         <div class="wrapper">
             <div class="slider">
                 <div class="slider-items">
-                    <input type="radio" name="slide" id="slider-1">
-                    <input type="radio" name="slide" id="slider-2">
-                    <input type="radio" name="slide" id="slider-3">
-                    <input type="radio" name="slide" id="slider-4">
+                    <input type="radio" name="slide" id="slider-1" class="slide-radio1" checked>
+                    <input type="radio" name="slide" id="slider-2" class="slide-radio2">
+                    <input type="radio" name="slide" id="slider-3" class="slide-radio3">
+                    <input type="radio" name="slide" id="slider-4" class="slide-radio4">
                     <div class="item slider-1">
                         <img src="./img/1.jpg" alt="first-img">
                     </div>
@@ -29,19 +29,28 @@
                     <div class="item">
                         <img src="./img/2.jpg" alt="fourth-img">
                     </div>
+                    <div class="slider slide1">
+                        <h4 class="text">What do we have here?</h4>
+                    </div>
+                    <div class="slider slide2">
+                        <h4 class="text">When the code doesn't work...</h4>
+                    </div>
+                    <div class="slider slide3">
+                        <h4 class="text">Any ideas on how to fix this...</h4>
+                    </div>
+                    <div class="slider slide4">
+                        <h4 class="text">when ctrl+c/ctrl+ v doesn't help</h4>
+                    </div>
                 </div>
             </div>
-                <div class="slider-nav">
-                    <label class="slider-nav-item first" for="slider-1"></label>
-                    <label class="slider-nav-item" for="slider-2"></label>
-                    <label class="slider-nav-item" for="slider-3"></label>
-                    <label class="slider-nav-item" for="slider-4"></label>
-                </div>
-
+            <div class="slider-nav">
+                <label class="slider-nav-item first" for="slider-1"></label>
+                <label class="slider-nav-item second" for="slider-2"></label>
+                <label class="slider-nav-item" for="slider-3"></label>
+                <label class="slider-nav-item" for="slider-4"></label>
+            </div>
         </div>
     </div>
 </div>
-
-
 </body>
 </html>
