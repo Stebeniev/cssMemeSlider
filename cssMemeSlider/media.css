@@ -1,0 +1,39 @@
+@media (max-width: 1920px) {
+    .text {
+        left: 624px;
+        top: 480px;
+    }
+}
+@media (max-width: 1440px) {
+    .text {
+        left: 390px;
+        top: 480px;
+    }
+}
+@media (max-width: 1280px) {
+    .text {
+        left: 305px;
+        top: 480px;
+    }
+}
+@media (max-width: 1024px) {
+    .text {
+        left: 180px;
+        top: 480px;
+    }
+}
+@media (max-width: 768px) {
+    .slider-nav {
+        margin-left: 40px;
+    }
+    .text {
+        left: 50px;
+        top: 500px;
+    }
+}
+@media (max-width: 425px) {
+    .text {
+        left: 0;
+        top: 500px;
+    }
+}
