@@ -1,1 +1,1 @@
-https://Stebeniev.github.io/cssMemeSlider/cssMemeSlider/index.html
+#https://Stebeniev.github.io/cssMemeSlider/cssMemeSlider/index.html
