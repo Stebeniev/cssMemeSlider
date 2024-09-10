@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+body {
+    background-color: #adaaaa;
+    overflow-x: hidden;
+    /*width: 100%;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.slide-radio {
+    display: none;
+}
+.main-wrapper {
+    /*margin: auto;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    border-radius: 1rem;
+    width: 45.5rem;
+    height: 32.5rem;
+    border: 1px solid rgba(10, 10, 10, 0.48);
+}
+.slider-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 44.5rem;
+    height: 31.5rem;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.slider {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.item {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+.img-items {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.slider-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 2.5rem;
+}
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.img-items {
+    display: flex;
+    height: 100%;
+}
+.slider-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    cursor: pointer;
+
+}
+.slider-nav-item {
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 1px solid orange;
+    border-radius: 50%;
+    background-color: orange;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+}
+.slider-nav-item span {
+    display: flex;
+    width: 2.2rem;
+    height: 2.2rem;
+    /*border: 1px solid red;*/
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: -1.063rem;
+    margin-top: -1.125rem;
+
+}
+.slider-nav-item:first-of-type {
+    background-color: black;
+    border-color: orange;
+}
+
+.dot-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*input[type="radio"]:checked + .slider-nav-item {*/
+/*    background-color: black;*/
+/*    border-color: blue;*/
+/*}*/
+
+
+/*input[type="radio"]:not(:checked) + .slider-nav-item {*/
+/*    background-color: blue;*/
+/*    border-color: blue;*/
+/*}*/
+
+.slider-nav-item:hover {
+    border-color: white;
+    color: white;
+}
+#slider-1:checked ~ .img-items .slider-1 {
+    margin-left: 0;
+    transition: all 2s ease;
+}
+#slider-2:checked ~ .img-items .slider-1 {
+    margin-left: -100%;
+    transition: all 2s ease;
+}
+#slider-3:checked ~ .img-items .slider-1 {
+    margin-left: -200%;
+    transition: all 2s ease;
+}
+#slider-4:checked ~ .img-items .slider-1 {
+    margin-left: -300%;
+    transition: all 2s ease;
+}
+.slider-text {
+    display: flex;
+    margin-left: 2rem;
+    align-self: center;
+    overflow: hidden;
+    padding-bottom: 0.188rem;
+}
+.text {
+    font-family: "Dancing Script", system-ui;
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: normal;
+    display: none;
+    color: orange;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+#slider-1:checked ~ .dot-text .slider-text .text1 {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+#slider-2:checked ~ .dot-text .slider-text .text2 {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+#slider-3:checked ~ .dot-text .slider-text .text3 {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+#slider-4:checked ~ .dot-text .slider-text .text4 {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .dot-text {
+        flex-direction: column-reverse;
+    }
+    .slider-nav {
+        order: 2;
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 0.626rem;
+        margin-bottom: 0.626rem;
+        width: 100%;
+    }
+    .slider-text {
+        order: 1;
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .main-wrapper {
+        margin-right: auto;
+        margin-left: auto;
+        width: 30.5rem;
+        height: 32.5rem;
+    }
+    .slider-wrapper {
+        width: 29.5rem;
+        height: 31.5rem;
+    }
+}
