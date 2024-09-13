@@ -220,6 +220,9 @@ img {
     }
 }
 @media (max-width: 500px) {
+    .text {
+        padding-right: 1rem;
+    }
     .main-wrapper {
         height: auto;
         width: 100%;
