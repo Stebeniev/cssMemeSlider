@@ -221,13 +221,29 @@ img {
 }
 @media (max-width: 500px) {
     .main-wrapper {
-        /*margin-right: auto;*/
-        /*margin-left: auto;*/
-        /*width: 30.5rem;*/
-        /*height: 32.5rem;*/
+        height: auto;
+        width: 100%;
     }
+
     .slider-wrapper {
-        /*width: 29.5rem;*/
-        /*height: 31.5rem;*/
+        height: auto;
+        width: 100%;
     }
+
+    .item {
+        height: 15.625rem;
+    }
+
+    img {
+        height: 15.625rem;
+    }
+
+    .text {
+        font-size: 0.9rem;
+    }
+
+    .slider-nav-item {
+        padding: 0.3rem;
+    }
+
 }
