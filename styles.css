@@ -27,9 +27,8 @@ body {
     display: none;
 }
 .main-wrapper {
-    /*margin-right: auto;*/
-    /*margin-left: auto;*/
-    /*margin: auto;*/
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
